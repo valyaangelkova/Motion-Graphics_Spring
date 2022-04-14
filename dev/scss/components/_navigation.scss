@@ -1,0 +1,28 @@
+/* =============
+    Navigation
+============= */
+nav{
+height: 100%;
+    ul{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        li{
+            margin-left: 4vw;
+            a:link, a:visited{
+                color: $white;
+                transition: 0.25s;
+                font-size: rem-calc(18);
+                font-weight: 200;
+
+                &:hover, &:active{
+                    color: $lime;
+
+                }
+
+
+            }
+        }
+    }
+}
