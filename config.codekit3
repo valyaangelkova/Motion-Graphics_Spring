@@ -71,6 +71,29 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/scripts-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/deploy\/scripts-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/deploy\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/dev\/content\/content.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -120,13 +143,13 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 4,
+      "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/deploy\/js\/scripts-min.js",
-      "oF" : 2,
+      "oAP" : "\/Users\/valentina\/Documents\/GitHub\/Motion-F22-Ethan-main\/deploy\/js\/scripts-min.js",
+      "oF" : 6,
       "sC" : 3,
       "tS" : 0
     },
@@ -370,7 +393,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 649104598.99548197,
-    "displayValue" : "Motion-F22-Ethan-main",
+    "displayValue" : "Motion-Graphics-Spring",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0
@@ -2150,7 +2173,7 @@
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
-      "minifierStyle" : 1,
+      "minifierStyle" : 0,
       "outputStyle" : 0,
       "sourceMapStyle" : 0,
       "syntaxCheckerStyle" : 1,
@@ -2257,7 +2280,7 @@
       "rewriteURLStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,
-      "sourceMapStyle" : 1,
+      "sourceMapStyle" : 0,
       "strictImports" : 0,
       "strictUnits" : 0
     },
