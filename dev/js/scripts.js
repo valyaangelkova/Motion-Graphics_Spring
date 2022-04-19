@@ -2,7 +2,9 @@
 
 
 const mainTL = gsap.timeline();
+
 mainTL
+
 .from("#hero article", {duration:2, alpha:0, yPercent:-100,   ease:"circ.out", scale:2})
 .from("#hero #line1", {duration:2, alpha:0, xPercent:-50,  ease: "sine.out"}, "herotext")
 .from("#hero #line2", {duration:2, alpha:0, xPercent:50, ease: "sine.out"}, "herotext")
