@@ -429,11 +429,21 @@ nav ul li {
 nav ul li a:link, nav ul li a:visited {
   color: #fff;
   transition: 0.25s;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   font-weight: 200;
 }
 nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
   color: #D6FF7E;
+}
+@media (min-width: 768px) {
+  nav ul li a:link, nav ul li a:visited {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 1440px) {
+  nav ul li a:link, nav ul li a:visited {
+    font-size: 1.125rem;
+  }
 }
 
 /* =============
@@ -442,26 +452,39 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 header {
   position: fixed;
   background-color: #45583D;
+  opacity: 0.63;
   width: 100%;
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
   z-index: 100%;
+}
+@media (min-width: 1440px) {
+  header {
+    display: grid;
+    grid-template-areas: ". hero .";
+    grid-template-columns: auto 1440px auto;
+  }
 }
 header > div {
   display: grid;
   grid-template-columns: 20% auto;
   padding: 8px 16px;
 }
+@media (min-width: 1440px) {
+  header > div {
+    grid-area: hero;
+  }
+}
 header > div aside a {
   display: inline-block;
+  opacity: 100;
 }
 
 /* =============
     Footer
 ============= */
 #hero {
-  height: 90vh;
+  height: 70vh;
   width: 100%;
-  overflow: hidden;
 }
 @media (min-width: 1440px) {
   #hero {
@@ -471,6 +494,15 @@ header > div aside a {
   }
 }
 #hero > div {
+  overflow: hidden;
+  height: 100%;
+}
+@media (min-width: 1440px) {
+  #hero > div {
+    grid-area: hero;
+  }
+}
+#hero > div article {
   display: flex;
   justify-content: left;
   align-items: flex-end;
@@ -480,17 +512,12 @@ header > div aside a {
   background-position: center;
   background-size: cover;
 }
-@media (min-width: 1440px) {
-  #hero > div {
-    grid-area: hero;
-  }
-}
-#hero > div #hero-content {
+#hero > div article #hero-content {
   color: #fff;
   text-align: left;
-  padding-bottom: 100px;
+  padding-bottom: 10vh;
 }
-#hero > div #hero-content h1 {
+#hero > div article #hero-content ul #line1 {
   color: #D6FF7E;
   font-family: Cormorant;
   font-size: 4.0625rem;
@@ -499,18 +526,38 @@ header > div aside a {
   text-shadow: 0px 4px 4px 0px #00000040;
 }
 @media (min-width: 768px) {
-  #hero > div #hero-content h1 {
-    font-size: 5.9375rem;
-    line-height: 75px;
+  #hero > div article #hero-content ul #line1 {
+    font-size: 7.5rem;
+    line-height: 95px;
   }
 }
 @media (min-width: 1440px) {
-  #hero > div #hero-content h1 {
-    font-size: 10.5625rem;
-    line-height: 130px;
+  #hero > div article #hero-content ul #line1 {
+    font-size: 8.75rem;
+    line-height: 120px;
   }
 }
-#hero > div #hero-content h2 {
+#hero > div article #hero-content ul #line2 {
+  color: #D6FF7E;
+  font-family: Cormorant;
+  font-size: 4.0625rem;
+  font-weight: 600;
+  line-height: 55px;
+  text-shadow: 0px 4px 4px 0px #00000040;
+}
+@media (min-width: 768px) {
+  #hero > div article #hero-content ul #line2 {
+    font-size: 7.5rem;
+    line-height: 95px;
+  }
+}
+@media (min-width: 1440px) {
+  #hero > div article #hero-content ul #line2 {
+    font-size: 8.75rem;
+    line-height: 120px;
+  }
+}
+#hero > div article #hero-content h2 {
   color: #fff;
   font-family: Prompt;
   font-size: 1.125rem;
@@ -520,21 +567,21 @@ header > div aside a {
   margin-top: -25px;
 }
 @media (min-width: 768px) {
-  #hero > div #hero-content h2 {
+  #hero > div article #hero-content h2 {
     font-size: 1.5625rem;
     line-height: 80px;
   }
 }
 @media (min-width: 1440px) {
-  #hero > div #hero-content h2 {
-    font-size: 2.25rem;
+  #hero > div article #hero-content h2 {
+    font-size: 1.75rem;
     line-height: 110px;
   }
 }
 
 #content {
-  padding-top: 112px;
-  border: aqua;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
 }
 #content > div {
   display: flex;
@@ -551,6 +598,7 @@ header > div aside a {
   font-weight: 600;
   line-height: 35px;
   text-shadow: 0px 4px 4px 0px #00000040;
+  padding-right: 40px;
 }
 #content > div p {
   width: 35%;

@@ -1,32 +1,41 @@
 #hero{
-
-    height: 90vh;
+//padding-top: -100px;
+    height: 70vh;
     width: 100%;
-    overflow: hidden;
+    
     @include xl{
         display:grid;
         grid-template-areas: ". hero .";
         grid-template-columns: auto 1440px auto;
     }
     >div{
-        display: flex;
+        overflow: hidden;
+        height: 100%;
+       
+        @include xl{ 
+            grid-area: hero;
+        }
+
+        article{
+            display: flex;
+
+       
         justify-content: left;
         align-items:flex-end;
         height: 100%;
+        
         padding-left:82px;
         background-image:url("../img/hero.jpg") ;
         background-position:center ;
         background-size: cover;
 
-        @include xl{ 
-            grid-area: hero;
-        }
+        
         #hero-content{
             color: $white;
             text-align: left;
-            padding-bottom: 100px;
-
-            h1{
+            padding-bottom: 10vh;
+ul{ 
+            #line1{
                 color: $lime;
                 font-family: Cormorant;
                 font-size: rem-calc(65);
@@ -36,17 +45,39 @@
 
             @include md {
 
-                font-size: rem-calc(95);
-                line-height: 75px;
+                font-size: rem-calc(120);
+                line-height: 95px;
             }
             
             @include xl {
-                font-size: rem-calc(169);
-                line-height: 130px;
+                font-size: rem-calc(140);
+                line-height: 120px;
             }
 
 
             }
+            #line2{
+                color: $lime;
+                font-family: Cormorant;
+                font-size: rem-calc(65);
+                font-weight: 600;
+                line-height: 55px;
+            text-shadow: 0px 4px 4px 0px #00000040;
+
+            @include md {
+
+                font-size: rem-calc(120);
+                line-height: 95px;
+            }
+            
+            @include xl {
+                font-size: rem-calc(140);
+                line-height: 120px;
+            }
+
+
+            }
+        }
             h2{
                 color: $white;
                 font-family: Prompt;
@@ -62,7 +93,7 @@
             }
             
             @include xl {
-                font-size: rem-calc(36);
+                font-size: rem-calc(28);
                 line-height: 110px;
             }
             
@@ -70,4 +101,5 @@
             }
         }
     }
+}
 }

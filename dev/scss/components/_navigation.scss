@@ -13,16 +13,23 @@ height: 100%;
             a:link, a:visited{
                 color: $white;
                 transition: 0.25s;
-                font-size: rem-calc(18);
+                font-size: rem-calc(12);
                 font-weight: 200;
 
                 &:hover, &:active{
                     color: $lime;
 
                 }
+                @include md {
+                    font-size: rem-calc(14);
+                }
+                @include xl {
+                    font-size: rem-calc(18);
+                }
 
 
             }
+            
         }
     }
 }
