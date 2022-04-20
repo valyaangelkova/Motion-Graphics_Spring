@@ -153,6 +153,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/js\/workspace.code-workspace" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/js\/workspace.code-workspace",
+      "oF" : 0
+    },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
       "bl" : 0,
